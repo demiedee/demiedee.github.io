@@ -123,13 +123,13 @@ html,body{background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;f
   <h1 class="cs-title">Payment Integration Across African Markets</h1>
   <p class="cs-meta">Helium Health &middot; Senior Product Manager &middot; 2021&ndash;2024</p>
   <div class="cs-body">
-    <p>Helium Health operates across Sub-Saharan Africa, East Africa and the GCC. Each market has its own payment infrastructure, its own preferred providers, its own failure patterns, and its own regulatory requirements. When I joined the Payments squad, the problem was clear: the business could not reliably collect money at scale across those markets.</p>
+    <p>Helium Health operates across Sub-Saharan Africa, East Africa, and the GCC. Each market has its own payment infrastructure, its own preferred providers, its own failure patterns, and its own regulatory requirements. When I joined the Payments squad, the problem was clear: the business could not reliably collect money at scale across those markets.</p>
     <h2 class="cs-h2">The situation</h2>
     <p>Payment failures were creating friction at exactly the wrong moment. The failure rates varied widely by market and by provider, and nobody had a clear picture of why. The data existed in fragments across systems that did not talk to each other.</p>
     <p>Each market also had different KYC requirements, different rules around how money could move, and different expectations from regulators. A solution that worked cleanly in Nigeria would not simply port to Kenya.</p>
     <h2 class="cs-h2">What we did</h2>
     <p>The first step was getting visibility. Working with the engineering and data teams, we built reconciliation tooling that tracked payment success rates by market, by provider, and by transaction type in close to real time. Before that work, issues surfaced through customer complaints rather than data.</p>
-    <p>With that visibility in place, we ran a structured process to evaluate and bring in the right payment providers for each market. This was not about picking one global provider and hoping for the best. It was about understanding the local infrastructure, which providers had the strongest success rates in each corridor, which had the compliance posture we needed, and which could handle the transaction volumes we were heading toward.</p>
+    <p>With that visibility in place, we ran a structured process to evaluate and bring in the right payment providers for each market. This was not about picking one global provider and hoping for the best. It was about understanding the local infrastructure: which providers had the strongest success rates in each corridor, which had the compliance posture we needed, and which could handle the transaction volumes we were heading toward.</p>
     <div class="callout">The reconciliation work cut the time it took to identify and resolve payment issues significantly. What had previously taken days of manual investigation could be spotted and escalated in hours.</div>
     <h2 class="cs-h2">What changed</h2>
     <p>Payment reliability improved across the markets we focused on. The business could process transactions at the scale the growth required without the failure rate undermining customer trust. The work also fed into a broader platform that supported the company through a significant fundraising round.</p>
@@ -150,11 +150,11 @@ html,body{background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;f
   <p class="cs-meta">Helium Health &middot; Senior Product Manager &middot; 2022&ndash;2024</p>
   <div class="cs-body">
     <p>Healthcare providers across Africa operate in a cash-constrained environment. Clinics and hospitals that want to grow cannot access financing from traditional banks. The paperwork requirements are steep, the collateral expectations are unrealistic, and the approval timelines do not match the pace at which healthcare decisions need to be made.</p>
-    <p>Helium Health had visibility into how clinics operated through HeliumOS, its provider digitisation platform. Patient volumes, billing patterns, payment histories. That data was an asset nobody had yet put to work in a credit context.</p>
+    <p>Helium Health had visibility into how clinics operated through HeliumOS, its provider digitisation platform. Patient volumes, billing patterns, payment histories — that data was an asset nobody had yet put to work in a credit context.</p>
     <h2 class="cs-h2">The opportunity</h2>
     <p>The opportunity was to use operational data to inform part of the lending eligibility process. Rather than asking a clinic owner to produce years of audited accounts, we could look at signals already flowing through HeliumOS: how many patients they were seeing, whether their billing was consistent, how reliably they paid their Helium subscription.</p>
     <h2 class="cs-h2">What we built</h2>
-    <p>Working with engineering, risk, finance, and legal, we designed and launched HeliumCredit, which allowed businesses to check their eligibility, apply for loans, and have funds disbursed quickly.</p>
+    <p>Working with engineering, risk, finance, and legal teams, we designed and launched HeliumCredit, which allowed businesses to check their eligibility, apply for loans, and have funds disbursed quickly.</p>
     <p>The eligibility model was developed in close collaboration with the finance and risk teams. We had to be deliberate about which signals carried real weight and which were misleading. A clinic that billed a lot but collected inconsistently was a different risk profile to one that billed less but collected reliably.</p>
     <div class="callout">Keeping the default rate low in a market where credit infrastructure is underdeveloped meant treating risk as a product problem, not just a finance one. The monitoring dashboards the team built gave early warning of stress in individual accounts before missed payments became a pattern.</div>
     <h2 class="cs-h2">What changed</h2>
@@ -176,10 +176,10 @@ html,body{background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;f
   <h1 class="cs-title">Building a Trusted Data Platform for NHS &amp; Police</h1>
   <p class="cs-meta">Dals &middot; Data Product Owner &middot; 2024&ndash;2025</p>
   <div class="cs-body">
-    <p>Dals provides interpreting and translation services to public sector organisations across the UK. NHS and Police were among the clients, but the public sector made up close to 90% of the total client base. The data needed to produce accurate reporting was spread across four separate interpreting systems, none designed to work together.</p>
+    <p>Dals provides interpreting and translation services to public sector organisations across the UK. NHS and Police were among the clients, but the public sector made up close to 90% of the total client base. The data needed to produce accurate reporting was spread across four separate interpreting systems, none of which were designed to work together.</p>
     <p>The result was reporting that was slow and inconsistent. Different teams inside Dals were working from different numbers. Public sector clients regularly questioned the figures they received, and without a reliable system of their own to cross-reference, the disputes were hard to resolve.</p>
     <h2 class="cs-h2">The situation</h2>
-    <p>Each system had its own data model and its own definitions for what counted as a completed booking, a cancellation, or a late attendance. Pulling those together required manual processes that were slow and prone to error. There was no single source of truth and no clear way to explain discrepancies when clients pushed back.</p>
+    <p>Each system had its own data model and its own definitions for what counted as a completed booking, a cancellation, or a late attendance. Pulling those together required manual processes that were time-consuming and prone to error. There was no single source of truth and no clear way to explain discrepancies when clients pushed back.</p>
     <h2 class="cs-h2">What we built</h2>
     <p>Working with the engineering team, we delivered a Databricks lakehouse on AWS that consolidated data from all four source systems into a single governed platform. The architecture handled volume and variety while keeping processing efficient.</p>
     <p>The more important work was getting the definitions right. Before any dashboard could be trusted, the business needed to agree on what its key metrics actually meant.</p>
@@ -206,14 +206,14 @@ html,body{background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;f
   <div class="cs-body">
     <p>Relate is one of the UK's largest providers of relationship counselling, operating through Family Action. Until recently, counsellors, supervisors, and operations staff had no single system to manage their work. Intake was handled in one place. Scheduling in another. Clinical notes in a third. Frontline teams spent a significant portion of their time on administrative work that the right technology should have been handling for them.</p>
     <h2 class="cs-h2">Starting with discovery</h2>
-    <p>Before any decisions were made about what to build, the team spent time understanding how work actually happened in practice. Conversations with counsellors, supervisors, operations leads, contracts managers, and data colleagues. Following the journey of a case from the moment a client made contact to the point where their file was closed.</p>
+    <p>Before any decisions were made about what to build, the team spent time understanding how work actually happened in practice. That meant conversations with counsellors, supervisors, operations leads, contracts managers, and data colleagues, following the journey of a case from the moment a client made contact to the point where their file was closed.</p>
     <p>Counsellors were spending time on paperwork that should have been automated. Supervisors had no easy way to see caseload status. Safeguarding obligations were being met through discipline and good luck rather than system design.</p>
     <h2 class="cs-h2">What we are building</h2>
     <p>The platform covers the full lifecycle of a counselling case: intake and referral, scheduling, consent and forms, clinical notes, supervision records, payments, vouchers, and audit. The design principle throughout has been to make the right thing the easy thing.</p>
     <div class="callout">The hardest design challenge has been balancing clinical flexibility with governance rigour. The platform has to support practitioner judgement while ensuring that records are complete, accurate, and auditable.</div>
     <h2 class="cs-h2">What we are learning</h2>
     <p>Building for social care is different from building for commercial healthcare. Every design decision gets stress-tested against whether it serves the person sitting across from a client in a difficult session, or whether it is serving the system at their expense.</p>
-    <p>This is work in progress. The case study will be updated as the platform reaches fuller deployment.</p>
+    <p>This is a work in progress. The case study will be updated as the platform reaches fuller deployment.</p>
   </div>
   <div class="cs-bottom"><button class="cs-back" onclick="goTo('home')">&#8592; Back to home</button></div>
   <div class="site-footer">&copy; 2026 Olayemi Obademi</div>
